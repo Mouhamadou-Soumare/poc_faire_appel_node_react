@@ -7,10 +7,12 @@ services:
       - "3000:3000"
     volumes:
       - ./backend:/app:delegated
+      - /app/node_modules
     environment:
       - NODE_ENV=development
     depends_on:
-      - db
+      db:
+        condition: service_healthy
 
   frontend:
     build: ./frontend
@@ -18,6 +20,7 @@ services:
       - "3001:3000"
     volumes:
       - ./frontend:/app:delegated
+      - /app/node_modules
     environment:
       - NODE_ENV=development
 
@@ -29,6 +32,11 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: association
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
