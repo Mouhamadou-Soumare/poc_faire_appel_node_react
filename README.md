@@ -1,6 +1,5 @@
 <h1 align="center">
   <br>
-  <a href="#"><img src="https://github.com/Mouhamadou-Soumare/poc_faire_appel_node_react/Levi.png" alt="Levi" width="100"></a>
   <br>
   LEVI, Toujours au top
   <br>
@@ -12,7 +11,7 @@
 <br/>
 
 
-![screenshot](https://github.com/Mouhamadou-Soumare/poc_faire_appel_node_react/Levi.png)
+![screenshot](https://github.com/Mouhamadou-Soumare/poc_faire_appel_node_react/blob/main/Levi.png)
 <br/>
 <br/>
 
