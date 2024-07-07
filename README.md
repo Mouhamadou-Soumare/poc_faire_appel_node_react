@@ -34,21 +34,21 @@ $ docker-compose up -d --build
 
 ## Fonctionnalités et pages
 
-L'application comprends les différentes pages suivantes:
+L'application comprends les différentes pages suivantes:<br/><br/>
 
-/ : Page de login
-/register : Page d'inscription
-/payment : Paiement de cotisation après inscription
-/dashboard : Tableau de bord
-/dashboard/attendance : Faire l'appel
+/ : Page de login<br/>
+/register : Page d'inscription<br/>
+/payment : Paiement de cotisation après inscription <br/>
+/dashboard : Tableau de bord <br/>
+/dashboard/attendance : Faire l'appel<br/>
 
-## Fonctionnalités et pages
+## Technologies utilisées
 
-Frontend: React, Tailwind CSS
-Backend: Node.js, Express.js
-Base de données: MySQL avec Sequelize ORM
-Authentification: JWT (JSON Web Tokens)
-Conteneurisation: Docker
+Frontend: React, Tailwind CSS <br/>
+Backend: Node.js, Express.js <br/>
+Base de données: MySQL avec Sequelize ORM <br/>
+Authentification: JWT (JSON Web Tokens) <br/>
+Conteneurisation: Docker <br/>
 
 ## Tests unitaires
 
