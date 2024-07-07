@@ -273,6 +273,13 @@ const AuthForm: React.FC<{ isRegister?: boolean }> = ({ isRegister = false }) =>
               </button>
             </div>
           </form>
+          {!isRegister && (
+            <div className="text-center mt-4">
+              <a href="/register" className="text-indigo-600 hover:text-indigo-900">
+                Pas encore inscrit ? Créez un compte
+              </a>
+            </div>
+          )}
         </div>
 
         <div className="authenticator-cards-container flex-sportsync">

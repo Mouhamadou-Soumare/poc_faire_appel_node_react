@@ -58,14 +58,17 @@ const initializeData = async () => {
   ]);
 };
 
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(PORT, async () => {
+    try {
+      await sequelize.sync({ force: true });
+      await initializeData();
+      console.log('Database synced successfully');
+      console.log(`Server is running on port ${PORT}`);
+    } catch (error) {
+      console.error('Unable to sync the database:', error);
+    }
+  });
+}
 
-app.listen(PORT, async () => {
-  try {
-    await sequelize.sync({ force: true }); 
-    await initializeData();
-    console.log('Database synced successfully');
-    console.log(`Server is running on port ${PORT}`);
-  } catch (error) {
-    console.error('Unable to sync the database:', error);
-  }
-});
+export default app;
