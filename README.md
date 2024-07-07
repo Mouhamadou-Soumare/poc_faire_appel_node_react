@@ -92,6 +92,6 @@ Vérification côté serveur <br/>
 Redirection et gestion des erreurs <br/>
 
 Ces améliorations renforceront la sécurité et assureront que chaque utilisateur n'a accès qu'aux fonctionnalités et aux données correspondant à son rôle. <br/>
-
+Un autre point à mettre en place rapidement est la mise en place d'un fichier .env pour les données sensibles 
 <br/>
 Cependant, il est important de rappeler que ce projet est un proof of concept (PoC) visant principalement à tester la mise en place d'une fonctionnalité.
