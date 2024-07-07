@@ -65,3 +65,31 @@ Telecharger le fichier Postman_Partiel.postman_collection.json et faire un impor
 Cette application inclut des fonctionnalités de paiement via PayPal.
 
 
+## Jeu de données
+
+Cette application est dotée d'un jeu de données qui se met en place automatiquement lors du build Docker. Un utilisateur que vous pouvez utiliser pour vous connecter est :
+<br/>
+
+```bash
+Identifiant : "choeurtis"
+Mot de passe : "password"
+```
+
+## Point à améliorer
+
+Actuellement, le tableau de bord et les fonctionnalités d'administration sont accessibles à tous les rôles. Bien que le JWT token soit utilisé pour sécuriser les données, il est possible d'accéder au tableau de bord simplement en entrant l'URL, à condition d'être connecté.
+<br/>
+
+Pour renforcer la sécurité et l'intégrité du système, voici quelques points à améliorer :
+<br/>
+
+Contrôle d'accès basé sur les rôles (RBAC) <br/>
+
+Vérification côté serveur <br/>
+
+Redirection et gestion des erreurs <br/>
+
+Ces améliorations renforceront la sécurité et assureront que chaque utilisateur n'a accès qu'aux fonctionnalités et aux données correspondant à son rôle. <br/>
+
+<br/>
+Cependant, il est important de rappeler que ce projet est un proof of concept (PoC) visant principalement à tester la mise en place d'une fonctionnalité.
