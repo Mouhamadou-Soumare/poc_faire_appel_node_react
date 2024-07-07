@@ -53,8 +53,10 @@ Conteneurisation: Docker <br/>
 ## Tests unitaires
 
 ```bash
-$ docker-compose exec backend npm test
+$ docker-compose exec backend npx jest
 ```
+
+
 
 ## Tests Postman
 
